@@ -14,7 +14,6 @@ class Home extends Component {
                 <h1 className="header fw-bolder">
                   I'm Saran, and I am a <br />{" "}
                   <span style={{ color: "white" }}>
-                    {/* Style will be inherited from the parent element */}
                     <Typewriter
                       words={[
                         "Web Developer",
@@ -51,14 +50,14 @@ class Home extends Component {
                   srcset=""
                 />
                 <p className="fs-6  px-3 pt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                dolorem molestias exercitationem eligendi in atque modi, esse
-                sunt quisquam expedita autem corporis adipisci itaque, mollitia
-                nulla quod reiciendis laudantium. Ab.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                dolorem molestias exercitationem eligendi in atque modi, esse
-                sunt quisquam expedita autem corporis adipisci itaque, mollitia
-                nulla quod reiciendis laudantium. Ab.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error dolorem molestias exercitationem eligendi in atque modi,
+                  esse sunt quisquam expedita autem corporis adipisci itaque,
+                  mollitia nulla quod reiciendis laudantium. Ab. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit. Error dolorem
+                  molestias exercitationem eligendi in atque modi, esse sunt
+                  quisquam expedita autem corporis adipisci itaque, mollitia
+                  nulla quod reiciendis laudantium. Ab.
                 </p>
               </div>
               <div className="col-sm text-center  pt-5">
@@ -70,16 +69,19 @@ class Home extends Component {
                   srcset=""
                 />
                 <p className="fs-6 px-3 pt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                dolorem molestias exercitationem eligendi in atque modi, esse
-                sunt quisquam expedita autem corporis adipisci itaque, mollitia
-                nulla quod reiciendis laudantium. Ab.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                dolorem molestias exercitationem eligendi in atque modi, esse
-                sunt quisquam expedita autem corporis adipisci itaque, mollitia
-                nulla quod reiciendis laudantium. Ab.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error dolorem molestias exercitationem eligendi in atque modi,
+                  esse sunt quisquam expedita autem corporis adipisci itaque,
+                  mollitia nulla quod reiciendis laudantium. Ab. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit. Error dolorem
+                  molestias exercitationem eligendi in atque modi, esse sunt
+                  quisquam expedita autem corporis adipisci itaque, mollitia
+                  nulla quod reiciendis laudantium. Ab.
                 </p>
               </div>
+            </div>
+            <div className="row">
+              <div className="col-sm"><h1 className="text-center">Contact</h1></div>
             </div>
           </div>
         </div>
