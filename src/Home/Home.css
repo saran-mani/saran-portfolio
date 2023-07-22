@@ -1,0 +1,25 @@
+:root{
+    --main-color:#5cdb95;
+    --text-color:#05386b;
+}
+.head{
+    background-color: var(--main-color);
+}
+.header{
+font-size: 50px;
+color: var(--text-color);
+}
+.myImage {
+  border-radius: 30% 70% 69% 31% / 30% 43% 57% 70%;
+  pointer-events: none;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+    .header{
+        font-size: 30px;
+        text-align: center;
+        }
+
+  }
+  p{
+    text-align: justify;
+  }
