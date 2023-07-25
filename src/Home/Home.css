@@ -23,3 +23,9 @@ color: var(--text-color);
   p{
     text-align: justify;
   }
+  .nav-bg-color {
+    background-color: var(--main-color);
+  }
+  .navbar-nav .nav-item .nav-link,.navbar .navbar-brand{
+    color: var(--text-color);
+  }

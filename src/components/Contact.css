@@ -1,0 +1,11 @@
+:root {
+  --main-color: #5cdb95;
+  --text-color: #05386b;
+}
+.wave{
+    background-color: var(--main-color);
+}
+.footer{
+    background-color: var(--text-color);
+    color: #5cdb95;
+}
