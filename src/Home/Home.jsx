@@ -1,45 +1,45 @@
-import React from "react";
+import { Component } from "react";
+
 import myImage from "../assets/myImage.png";
 import myImage2 from "../assets/myImage2.png";
 import resume from "../assets/Saran_resume.pdf";
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
-import ScrollReveal from "scrollreveal";
-class Home extends React.Component {
+class Home extends Component {
   state = {};
   render() {
     return (
       <>
-      <nav class="navbar navbar-dark  nav-bg-color navbar-expand-md px-3">
-          <a href="#home" class="navbar-brand fs-3 fw-bold">
+        <nav className="navbar navbar-dark  nav-bg-color navbar-expand-md px-3">
+          <a href="#home" className="navbar-brand fs-3 fw-bold">
             Saran
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             data-bs-toggle="collapse"
             data-bs-target="#navbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-collapse collapse justify-content-end" id="navbar">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a href="#home" class="nav-link">
+          <div className="navbar-collapse collapse justify-content-end" id="navbar">
+            <ul className="navbar-nav ">
+              <li className="nav-item">
+                <a href="#home" className="nav-link">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">
+              <li className="nav-item">
+                <a href="#about" className="nav-link">
                   About
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#skills" class="nav-link">
+              <li className="nav-item">
+                <a href="#skills" className="nav-link">
                   Skills
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">
+              <li className="nav-item">
+                <a href="#contact" className="nav-link">
                   Contact
                 </a>
               </li>
@@ -47,9 +47,9 @@ class Home extends React.Component {
           </div>
         </nav>
         <div className="head" id="home">
-          <div class="container-fluid">
-            <div class="row mx-auto">
-              <div class="col-sm  pt-5">
+          <div className="container-fluid">
+            <div className="row mx-auto">
+              <div className="col-sm  pt-5">
                 <h1 className="header fw-bolder">
                   I'm Saran, and I am a <br />{" "}
                   <span style={{ color: "white" }}>
@@ -70,23 +70,23 @@ class Home extends React.Component {
                   </span>
                 </h1>
                 <div className="py-5 resumemain">
-                  <a className="resume" href={resume} target="_blank">
+                  <a className="resume" href={resume} target="_blank" rel="noreferrer">
                     Resume
                   </a>
                 </div>
               </div>
-              <div class="col-sm text-center  pt-5 " ref={myImage}>
+              <div className="col-sm text-center  pt-5 " ref={myImage}>
                 <img
                   src={myImage}
-                  class="img-fluid myImage w-75"
+                  className="img-fluid myImage w-75"
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
               </div>
             </div>
           </div>
         </div>
-        
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
@@ -94,12 +94,11 @@ class Home extends React.Component {
         >
           <path
             fill="#379683"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <div class="container-fluid" id="about" >
-          
+        <div className="container-fluid" id="about">
           <div className="row part2">
             {" "}
             <h1 className="text-center py-3">About me</h1>
@@ -107,9 +106,9 @@ class Home extends React.Component {
               {" "}
               <img
                 src={myImage2}
-                class="img-fluid myImage w-75"
+                className="img-fluid myImage w-75"
                 alt=""
-                srcset=""
+                srcSet=""
               />
             </div>
             <div className="col-sm text-center  pt-5">
@@ -131,14 +130,14 @@ class Home extends React.Component {
         >
           <path
             fill="#05386b"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <div class="container-fluid skills">
+        <div className="container-fluid skills">
           <h1 className="text-center py-3">Skills</h1>
-          <div class="row">
-            <div class="col-sm">
+          <div className="row">
+            <div className="col-sm">
               <h3>Technical</h3>
               <ul>
                 <li>React js</li>
@@ -148,7 +147,7 @@ class Home extends React.Component {
                 <li>CSS</li>
               </ul>
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <h3>Graphic Design</h3>
               <ul>
                 <li>Adobe Illustrator</li>
@@ -158,7 +157,7 @@ class Home extends React.Component {
                 <li>Figma</li>
               </ul>
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <h3>Content Creation</h3>
               <ul>
                 <li>Adobe Premiere Pro</li>
@@ -174,20 +173,20 @@ class Home extends React.Component {
         >
           <path
             fill="#edf5e1"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <div class="container-fluid contact" id="contact">
+        <div className="container-fluid contact" id="contact">
           <h1 className="text-center py-3">Contact</h1>
-          <div class="row ">
-            <div class="col-sm">
+          <div className="row ">
+            <div className="col-sm">
               <p>Phone:6379710438</p>
               <p>Email:saranmvdm@gmail.com</p>
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <p>
-                <a href="https://www.linkedin.com/in/saranmj/" target="_blank">
+                <a href="https://www.linkedin.com/in/saranmj/" target="_blank" rel="noreferrer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -217,7 +216,7 @@ class Home extends React.Component {
                 </a>
               </p>
               <p>
-                <a href="https://www.instagram.com/mj__saran/" target="_blank">
+                <a href="https://www.instagram.com/mj__saran/" target="_blank" rel="noreferrer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -294,10 +293,10 @@ class Home extends React.Component {
                       <path
                         fill="none"
                         stroke="#fff"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-miterlimit="10"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeMiterlimit="10"
+                        strokeWidth="2"
                         d="M30,11H18c-3.9,0-7,3.1-7,7v12c0,3.9,3.1,7,7,7h12c3.9,0,7-3.1,7-7V18C37,14.1,33.9,11,30,11z"
                       ></path>
                       <circle cx="31" cy="16" r="1" fill="#fff"></circle>
@@ -309,10 +308,10 @@ class Home extends React.Component {
                         r="6"
                         fill="none"
                         stroke="#fff"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-miterlimit="10"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeMiterlimit="10"
+                        strokeWidth="2"
                       ></circle>
                     </g>
                   </svg>
@@ -320,7 +319,7 @@ class Home extends React.Component {
                 </a>
               </p>
               <p>
-                <a href="https://wa.me/qr/OZJYSTAFSDJGH1" target="_blank">
+                <a href="https://wa.me/qr/OZJYSTAFSDJGH1" target="_blank" rel="noreferrer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -347,9 +346,9 @@ class Home extends React.Component {
                     ></path>
                     <path
                       fill="#fff"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                   Whatsapp
@@ -364,7 +363,6 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-
       </>
     );
   }
