@@ -10,6 +10,7 @@ class Home extends Component {
   render() {
     return (
       <>
+      {/* NAVBAR SECTION */}
         <nav className="navbar navbar-dark  nav-bg-color navbar-expand-md px-3">
           <a href="#home" className="navbar-brand fs-3 fw-bold">
             Saran
@@ -46,6 +47,7 @@ class Home extends Component {
             </ul>
           </div>
         </nav>
+        {/* MAIN SECTION */}
         <div className="head" id="home">
           <div className="container-fluid">
             <div className="row mx-auto">
@@ -86,7 +88,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
-
+        {/* ABOUT ME SECTION */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
@@ -122,6 +124,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        {/* SKILLS SECTION */}
         <div id="skills"></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -166,6 +169,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        {/* CONTACT SECTION */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
