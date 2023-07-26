@@ -143,7 +143,7 @@ class Home extends Component {
                 <li>React js</li>
                 <li>Javascript</li>
                 <li>Bootstrap 5</li>
-                <li>HTML</li>
+                <li>HTML 5</li>
                 <li>CSS</li>
               </ul>
             </div>
