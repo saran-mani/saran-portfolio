@@ -62,14 +62,14 @@ class Home extends Component {
             <div className="row mx-auto">
               <div className="col-sm  pt-5">
                 <h1 className="header fw-bolder">
-                  I'm Saran, and I am a <br />{" "}
+                  I'm Saran, Skilled in<br />{" "}
                   <span style={{ color: "white" }}>
                     <Typewriter
                       words={[
-                        "Web Developer",
-                        "Graphic Designer",
-                        "UI/UX Designer",
-                        "Content Creater",
+                        "Full Stack Developement",
+                        "Web design",
+                        "MERN Stack",
+                        ,
                       ]}
                       loop={100000000000}
                       cursor
