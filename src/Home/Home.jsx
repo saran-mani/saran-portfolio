@@ -69,7 +69,6 @@ class Home extends Component {
                         "Full Stack Developement",
                         "Web design",
                         "MERN Stack",
-                        ,
                       ]}
                       loop={100000000000}
                       cursor
