@@ -1,8 +1,17 @@
 import { Component } from "react";
-
 import myImage from "../assets/myImage.png";
 import myImage2 from "../assets/myImage2.png";
-import resume from "../assets/Saran_resume.pdf";
+import resume from "../assets/SaranResume.pdf";
+import jsIcon from "../assets/icons/js.png"
+import cssIcon from "../assets/icons/css.png"
+import htmlcon from "../assets/icons/html.png"
+import expressIcon from "../assets/icons/expressjs.png"
+import reactIcon from "../assets/icons/reactjs.png"
+import bootstrapIcon from "../assets/icons/bootstrap.png"
+import nodeIcon from "../assets/icons/nodejs.png"
+import ejsIcon from "../assets/icons/ejs.png"
+import mongodbIcon from "../assets/icons/mongodb.png"
+import npmIcon from "../assets/icons/npm.png"
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
 class Home extends Component {
@@ -141,31 +150,18 @@ class Home extends Component {
           <h1 className="text-center py-3">Skills</h1>
           <div className="row">
             <div className="col-sm">
-              <h3>Technical</h3>
-              <ul>
-                <li>React js</li>
-                <li>Javascript</li>
-                <li>Bootstrap 5</li>
-                <li>HTML 5</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-            <div className="col-sm">
-              <h3>Graphic Design</h3>
-              <ul>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Indesign</li>
-                <li>Adobe XD</li>
-                <li>Figma</li>
-              </ul>
-            </div>
-            <div className="col-sm">
-              <h3>Content Creation</h3>
-              <ul>
-                <li>Adobe Premiere Pro</li>
-                <li>Adobe After Effects</li>
-              </ul>
+              <div id="skill-icon">
+                <img src={jsIcon} alt="" />
+                <img src={nodeIcon} alt="" />
+                <img src={reactIcon} alt="" />
+                <img src={expressIcon} alt="" />
+                <img src={mongodbIcon} alt="" />
+                <img src={ejsIcon} alt="" />
+                <img src={htmlcon} alt="" />
+                <img src={cssIcon} alt="" />
+                <img src={bootstrapIcon} alt="" />
+                <img src={npmIcon} alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -185,8 +181,8 @@ class Home extends Component {
           <h1 className="text-center py-3">Contact</h1>
           <div className="row ">
             <div className="col-sm">
-              <p>Phone:6379710438</p>
-              <p>Email:saranmvdm@gmail.com</p>
+              <p><a href="tel:+91 6379710438">Phone:6379710438</a></p>
+              <p><a href="mailto:saranmvdm@gmail.com">Email:saranmvdm@gmail.com</a></p>
             </div>
             <div className="col-sm">
               <p>
