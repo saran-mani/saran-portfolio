@@ -12,7 +12,7 @@ import nodeIcon from "../assets/icons/nodejs.png";
 import ejsIcon from "../assets/icons/ejs.png";
 import mongodbIcon from "../assets/icons/mongodb.png";
 import npmIcon from "../assets/icons/npm.png";
-import yelpcampimg from '../assets/projectImages/yelpcamp.png'
+import yelpcampimg from "../assets/projectImages/yelpcamp.png";
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
 class Home extends Component {
@@ -138,11 +138,12 @@ class Home extends Component {
             </div>
             <div className="col-sm text-center  pt-5">
               <p className="px-3 pt-3 intro">
-                "Hi, I'm Saran, a skilled web developer, graphic designer, and
-                content creator. With a flair for aesthetics and a strong
-                technical background, I enjoy building user-centric websites and
-                designing captivating visuals. Let's explore the digital world
-                together!"
+                I'm Saran, a Full Stack Developer with a passion for crafting
+                exceptional web experiences. Proficient in Web Design and
+                specialized in the MERN Stack, I thrive on bringing creative
+                solutions to life. My commitment to staying ahead in the
+                ever-evolving tech landscape drives me to deliver innovative and
+                robust outcomes. Let's collaborate and turn ideas into reality.
               </p>
             </div>
           </div>
@@ -172,8 +173,23 @@ class Home extends Component {
                     campgrounds. Feel free to share some of your own and comment
                     on others!
                   </p>
-                  <a href="https://yelpcamp-l3ji.onrender.com/" rel="noreferrer" target='_blank' class="btn btn-primary mb-2">Click to preview</a><br />
-                  <a href="https://github.com/saran-mani/YelpCamp" rel="noreferrer" target='_blank' class="btn btn-primary">Click to open source code</a>
+                  <a
+                    href="https://yelpcamp-l3ji.onrender.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="btn btn-primary mb-2"
+                  >
+                    Click to preview
+                  </a>
+                  <br />
+                  <a
+                    href="https://github.com/saran-mani/YelpCamp"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    Click to open source code
+                  </a>
                 </div>
               </div>
             </div>
