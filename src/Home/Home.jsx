@@ -2,16 +2,17 @@ import { Component } from "react";
 import myImage from "../assets/myImage.png";
 import myImage2 from "../assets/myImage2.png";
 import resume from "../assets/SaranResume.pdf";
-import jsIcon from "../assets/icons/js.png"
-import cssIcon from "../assets/icons/css.png"
-import htmlcon from "../assets/icons/html.png"
-import expressIcon from "../assets/icons/expressjs.png"
-import reactIcon from "../assets/icons/reactjs.png"
-import bootstrapIcon from "../assets/icons/bootstrap.png"
-import nodeIcon from "../assets/icons/nodejs.png"
-import ejsIcon from "../assets/icons/ejs.png"
-import mongodbIcon from "../assets/icons/mongodb.png"
-import npmIcon from "../assets/icons/npm.png"
+import jsIcon from "../assets/icons/js.png";
+import cssIcon from "../assets/icons/css.png";
+import htmlcon from "../assets/icons/html.png";
+import expressIcon from "../assets/icons/expressjs.png";
+import reactIcon from "../assets/icons/reactjs.png";
+import bootstrapIcon from "../assets/icons/bootstrap.png";
+import nodeIcon from "../assets/icons/nodejs.png";
+import ejsIcon from "../assets/icons/ejs.png";
+import mongodbIcon from "../assets/icons/mongodb.png";
+import npmIcon from "../assets/icons/npm.png";
+import yelpcampimg from '../assets/projectImages/yelpcamp.png'
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
 class Home extends Component {
@@ -19,7 +20,7 @@ class Home extends Component {
   render() {
     return (
       <>
-      {/* NAVBAR SECTION */}
+        {/* NAVBAR SECTION */}
         <nav className="navbar navbar-dark  nav-bg-color navbar-expand-md px-3">
           <a href="#home" className="navbar-brand fs-3 fw-bold">
             Saran
@@ -31,7 +32,10 @@ class Home extends Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="navbar-collapse collapse justify-content-end" id="navbar">
+          <div
+            className="navbar-collapse collapse justify-content-end"
+            id="navbar"
+          >
             <ul className="navbar-nav ">
               <li className="nav-item">
                 <a href="#home" className="nav-link">
@@ -67,7 +71,8 @@ class Home extends Component {
             <div className="row mx-auto">
               <div className="col-sm  pt-5">
                 <h1 className="header fw-bolder">
-                  I'm Saran, Skilled in<br />{" "}
+                  I'm Saran, Skilled in
+                  <br />{" "}
                   <span style={{ color: "white" }}>
                     <Typewriter
                       words={[
@@ -85,7 +90,12 @@ class Home extends Component {
                   </span>
                 </h1>
                 <div className="py-5 resumemain">
-                  <a className="resume" href={resume} target="_blank" rel="noreferrer">
+                  <a
+                    className="resume"
+                    href={resume}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Resume
                   </a>
                 </div>
@@ -138,7 +148,6 @@ class Home extends Component {
           </div>
         </div>
         {/* Projects SECTION */}
-        <div id="projects"></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
@@ -150,18 +159,27 @@ class Home extends Component {
             d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <div className="container-fluid projects">
+        <div id="projects" className="container-fluid projects">
           <h1 className="text-center py-3">Projects</h1>
           <div className="row">
-            <div className="col-sm">
-              <div id="skill-icon">
-               
+            <div className="col-sm-6">
+              <div class="card mb-3">
+                <img src={yelpcampimg} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Yelp Camp</h5>
+                  <p class="card-text">
+                    Welcome to YelpCamp! Jump right in and explore our many
+                    campgrounds. Feel free to share some of your own and comment
+                    on others!
+                  </p>
+                  <a href="https://yelpcamp-l3ji.onrender.com/" rel="noreferrer" target='_blank' class="btn btn-primary mb-2">Click to preview</a><br />
+                  <a href="https://github.com/saran-mani/YelpCamp" rel="noreferrer" target='_blank' class="btn btn-primary">Click to open source code</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         {/* SKILLS SECTION */}
-        <div id="skills"></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
@@ -173,7 +191,7 @@ class Home extends Component {
             d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <div className="container-fluid skills">
+        <div id="skills" className="container-fluid skills">
           <h1 className="text-center py-3">Skills</h1>
           <div className="row">
             <div className="col-sm">
@@ -208,12 +226,22 @@ class Home extends Component {
           <h1 className="text-center py-3">Contact</h1>
           <div className="row ">
             <div className="col-sm">
-              <p><a href="tel:+91 6379710438">Phone:6379710438</a></p>
-              <p><a href="mailto:saranmvdm@gmail.com">Email:saranmvdm@gmail.com</a></p>
+              <p>
+                <a href="tel:+91 6379710438">Phone:6379710438</a>
+              </p>
+              <p>
+                <a href="mailto:saranmvdm@gmail.com">
+                  Email:saranmvdm@gmail.com
+                </a>
+              </p>
             </div>
             <div className="col-sm">
               <p>
-                <a href="https://www.linkedin.com/in/saranmj/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/saranmj/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -243,7 +271,11 @@ class Home extends Component {
                 </a>
               </p>
               <p>
-                <a href="https://www.instagram.com/mj__saran/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.instagram.com/mj__saran/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -346,7 +378,11 @@ class Home extends Component {
                 </a>
               </p>
               <p>
-                <a href="https://wa.me/qr/OZJYSTAFSDJGH1" target="_blank" rel="noreferrer">
+                <a
+                  href="https://wa.me/qr/OZJYSTAFSDJGH1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
