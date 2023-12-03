@@ -44,6 +44,11 @@ class Home extends Component {
                 </a>
               </li>
               <li className="nav-item">
+                <a href="#projects" className="nav-link">
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
                 <a href="#skills" className="nav-link">
                   Skills
                 </a>
@@ -132,12 +137,35 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        {/* Projects SECTION */}
+        <div id="projects"></div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 220"
+          className="wave-2"
+        >
+          <path
+            fill="#8ee4af"
+            fillOpacity="1"
+            d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+        <div className="container-fluid projects">
+          <h1 className="text-center py-3">Projects</h1>
+          <div className="row">
+            <div className="col-sm">
+              <div id="skill-icon">
+               
+              </div>
+            </div>
+          </div>
+        </div>
         {/* SKILLS SECTION */}
         <div id="skills"></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
-          className="wave-2"
+          className="wave-3"
         >
           <path
             fill="#05386b"
@@ -168,7 +196,7 @@ class Home extends Component {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
-          className="wave-3"
+          className="wave-4"
         >
           <path
             fill="#edf5e1"
