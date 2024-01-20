@@ -1,6 +1,4 @@
 import { Component } from "react";
-import myImage from "../assets/myImage.png";
-import myImage2 from "../assets/myImage2.png";
 import resume from "../assets/SaranResume.pdf";
 import jsIcon from "../assets/icons/js.png";
 import cssIcon from "../assets/icons/css.png";
@@ -22,11 +20,15 @@ import expressSvg from "../assets/icons/express-js.svg";
 import mongodbSvg from "../assets/icons/mongodb.svg";
 import ejsSvg from "../assets/icons/ejs.svg";
 import angularSvg from "../assets/icons/angular.svg";
+import emailSvg from "../assets/icons/email.svg";
+import myImage from "../assets/image.png";
 import yelpcampimg from "../assets/projectImages/yelpcamp.png";
 import countryinfoimg from "../assets/projectImages/countryinfo.png";
-
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 class Home extends Component {
   state = {};
   render() {
@@ -85,12 +87,12 @@ class Home extends Component {
                 <h1 className="header fw-bolder">
                   I'm Saran, Skilled in
                   <br />{" "}
-                  <span style={{ color: "white" }}>
+                  <span style={{ color: "#A6B1E1" }}>
                     <Typewriter
                       words={[
                         "Full Stack Developement",
                         "Web design",
-                        "MERN Stack",
+                        "MEAN Stack",
                       ]}
                       loop={100000000000}
                       cursor
@@ -101,7 +103,7 @@ class Home extends Component {
                     />
                   </span>
                 </h1>
-                <div className="py-5 resumemain">
+                <div className="py-5 resumemain" data-aos="fade-up">
                   <a
                     className="resume"
                     href={resume}
@@ -112,71 +114,116 @@ class Home extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col-sm text-center  pt-5 " ref={myImage}>
-                <img
-                  src={myImage}
-                  className="img-fluid myImage w-75"
-                  alt=""
-                  srcSet=""
-                />
+              <div className="col-sm text-center  pt-5 ">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                  <a
+                    href="https://github.com/saran-mani"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="btn btn-dark m-3 px-4">
+                      <img src={githubIcon} style={{ width: "35px" }} alt="" />
+                      Github
+                    </button>
+                  </a>
+                </div>
+
+                <br />
+                <div data-aos="fade-right" data-aos-duration="1500">
+                  {" "}
+                  <a
+                    href="https://www.linkedin.com/in/saranmj/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="btn btn-light m-3 px-3">
+                      <img
+                        src={linkedinIcon}
+                        alt=""
+                        style={{ width: "35px" }}
+                      />
+                      Linked In
+                    </button>
+                  </a>
+                </div>
+
+                <br />
+                <div data-aos="fade-right" data-aos-duration="2000">
+                  <a
+                    href="mailto:saranmvdm@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="btn btn-light m-3 px-4">
+                      <img
+                        src={emailSvg}
+                        alt=""
+                        style={{ width: "35px", paddingRight: "5px" }}
+                      />
+                      Email
+                    </button>
+                  </a>
+                </div>
+                <br />
               </div>
             </div>
           </div>
         </div>
         {/* ABOUT ME SECTION */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 220"
-          className="wave-1"
-        >
-          <path
-            fill="#379683"
-            fillOpacity="1"
-            d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
         <div className="container-fluid" id="about">
-          <div className="row part2">
+          <div className="row part2 pb-5 pt-5 align-items-center">
             {" "}
-            <h1 className="text-center py-3">About me</h1>
-            <div className="col-sm text-center  pt-5">
+            <h1
+              className="text-center py-3"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              About me
+            </h1>
+            <div
+              className="col-sm text-center  pt-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               {" "}
               <img
-                src={myImage2}
+                src={myImage}
                 className="img-fluid myImage w-75"
                 alt=""
                 srcSet=""
               />
             </div>
-            <div className="col-sm text-center  pt-5">
+            <div
+              className="col-sm text-center  pt-5"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
               <p className="px-3 pt-3 intro">
-                I'm Saran, a Full Stack Developer with a passion for crafting
-                exceptional web experiences. Proficient in Web Design and
-                specialized in the MERN Stack, I thrive on bringing creative
-                solutions to life. My commitment to staying ahead in the
-                ever-evolving tech landscape drives me to deliver innovative and
-                robust outcomes. Let's collaborate and turn ideas into reality.
+                Hey there, I'm Saran! 👋 As a web developer, I thrive on turning
+                ideas into captivating digital experiences. My toolkit includes
+                Node.js, Express.js, MongoDB, Angular, and React – all fueled by
+                my passion for JavaScript. 🚀 Let's collaborate and bring your
+                web projects to life! 💻✨
               </p>
             </div>
           </div>
         </div>
         {/* Projects SECTION */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 220"
-          className="wave-2"
-        >
-          <path
-            fill="#8ee4af"
-            fillOpacity="1"
-            d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
-        <div id="projects" className="container-fluid projects">
-          <h1 className="text-center py-3">Projects</h1>
-          <div className="row">
+        <div id="projects" className="container-fluid pt-5 projects">
+          <h1
+            className="text-center py-3"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            Projects
+          </h1>
+          <div className="row ">
             <div className="col-sm-6">
-              <div class="card mb-3">
+              <div
+                class="card mb-3 text-bg-light"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <img src={yelpcampimg} class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Yelp Camp</h5>
@@ -221,7 +268,11 @@ class Home extends Component {
               </div>
             </div>
             <div className="col-sm-6">
-              <div class="card mb-3">
+              <div
+                class="card mb-3"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <img src={countryinfoimg} class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Countries Info</h5>
@@ -262,49 +313,82 @@ class Home extends Component {
           </div>
         </div>
         {/* SKILLS SECTION */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 220"
-          className="wave-3"
-        >
-          <path
-            fill="#05386b"
-            fillOpacity="1"
-            d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
         <div id="skills" className="container-fluid skills">
           <h1 className="text-center py-3">Skills</h1>
           <div className="row">
             <div className="col-sm">
               <div id="skill-icon">
-                <img src={jsIcon} alt="" />
-                <img src={nodeIcon} alt="" />
-                <img src={angularIcon} alt="" />
-                <img src={reactIcon} alt="" />
-                <img src={expressIcon} alt="" />
-                <img src={mongodbIcon} alt="" />
-                <img src={ejsIcon} alt="" />
-                <img src={htmlcon} alt="" />
-                <img src={cssIcon} alt="" />
-                <img src={bootstrapIcon} alt="" />
-                <img src={npmIcon} alt="" />
+                <img
+                  src={jsIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                />
+                <img
+                  src={nodeIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1100"
+                />
+                <img
+                  src={angularIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1200"
+                />
+                <img
+                  src={reactIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1300"
+                />
+                <img
+                  src={expressIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1400"
+                />
+                <img
+                  src={mongodbIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
+                />
+                <img
+                  src={ejsIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1600"
+                />
+                <img
+                  src={htmlcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1700"
+                />
+                <img
+                  src={cssIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1800"
+                />
+                <img
+                  src={bootstrapIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="1900"
+                />
+                <img
+                  src={npmIcon}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                />
               </div>
             </div>
           </div>
         </div>
         {/* CONTACT SECTION */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 220"
-          className="wave-4"
-        >
-          <path
-            fill="#edf5e1"
-            fillOpacity="1"
-            d="M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,42.7C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
         <div className="container-fluid contact" id="contact">
           <h1 className="text-center py-3">Contact</h1>
           <div className="row ">

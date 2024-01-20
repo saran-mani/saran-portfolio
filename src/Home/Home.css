@@ -1,14 +1,16 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+body{
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 7%, 18%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(47, 0%, 100%, 0.17)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
 :root {
-  --main-color: #5cdb95;
-  --text-color: #05386b;
-  --main2-color: #379683;
-  --main3-color: #edf5e1;
-  --main4-color:#8ee4af;
+  --primary-color: #424874;
+  --secondary-color: #A6B1E1;
+  --light-color: #DCD6F7;
+  --text-color: #F4EEFF;
 }
 
 .nav-bg-color {
-  background-color: var(--main-color);
+  background-color: var(--primary-color);
 }
 
 .navbar-nav .nav-item .nav-link,
@@ -17,8 +19,9 @@
 }
 
 .head {
-  background-color: var(--main-color);
-}
+  padding-top: 5rem;
+  background-color: var(--primary-color);
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 7%, 18%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='1' stroke='hsla(47, 0%, 100%, 0.05)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")}
 
 .header {
   font-size: 50px;
@@ -28,23 +31,23 @@
 .resume {
   text-decoration: none;
   color: white;
-  background-color: var(--text-color);
+  background-color: var(--secondary-color);
   padding: 8px;
   border-radius: 5px;
   font-size: 27px;
 }
 
 .myImage {
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   pointer-events: none;
 }
 
 .part2 {
-  background-color: var(--main2-color);
-}
+  background-color: var(--primary-color);
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 7%, 18%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='1' stroke='hsla(47, 0%, 100%, 0.05)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")}
 
 .part2 h1 {
-  text-decoration: 5px underline var(--main3-color);
+  text-decoration: 5px underline var(--text-color);
+  color: var(--text-color);
 }
 
 .skills h1 {
@@ -64,15 +67,18 @@
 
 .intro {
   font-size: x-large;
+  color: var(--text-color);
 }
 
 .skills {
-  background-color: var(--text-color);
+  background-color: var(--secondary-color);
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 7%, 18%, 0)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='hsla(47, 0%, 100%, 0.07)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
   color: var(--main-color);
 }
 
 .projects{
-  background-color:var(--main4-color)
+  background-color:var(--secondary-color);
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 7%, 18%, 0)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='hsla(47, 0%, 100%, 0.07)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
 }
 .skills div h3 {
   text-align: center;
@@ -91,24 +97,9 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.wave-1 {
-  background-color: var(--main-color);
-}
-
-.wave-2 {
-  background-color: var(--main2-color);
-}
-.wave-3{
-  background-color: var(--main4-color);
-
-}
-.wave-4 {
-  background-color: var(--text-color);
-}
-
 .contact {
   color: var(--text-color);
-  background-color: var(--main3-color);
+  background-color: black;
 }
 
 .contact a {
@@ -117,6 +108,8 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .head {
+    padding-top: 80px;}
   .header {
     font-size: 30px;
     text-align: center;
