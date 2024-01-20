@@ -24,6 +24,7 @@ import emailSvg from "../assets/icons/email.svg";
 import myImage from "../assets/image.png";
 import yelpcampimg from "../assets/projectImages/yelpcamp.png";
 import countryinfoimg from "../assets/projectImages/countryinfo.png";
+import logo from '../assets/logo.png'
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
@@ -37,7 +38,7 @@ class Home extends Component {
         {/* NAVBAR SECTION */}
         <nav className="navbar navbar-dark  nav-bg-color navbar-expand-md px-3">
           <a href="#home" className="navbar-brand fs-3 fw-bold">
-            Saran
+            <img src={logo} alt="" style={{width:'25px',paddingBottom:'5px'}}/> Saran
           </a>
           <button
             className="navbar-toggler"
