@@ -315,7 +315,8 @@ class Home extends Component {
         </div>
         {/* SKILLS SECTION */}
         <div id="skills" className="container-fluid skills">
-          <h1 className="text-center py-3">Skills</h1>
+          <h1 className="text-center py-3"  data-aos="fade-right"
+              data-aos-duration="1000">Skills</h1>
           <div className="row">
             <div className="col-sm">
               <div id="skill-icon">
