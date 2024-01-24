@@ -230,31 +230,31 @@ class Home extends Component {
           <div className="row ">
             <div className="col-sm-4">
               <div
-                class="card mb-3 text-bg-light"
+                className="card mb-3 text-bg-light"
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                <img src={yelpcampimg} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Yelp Camp</h5>
-                  <div class="d-flex flex-row mb-3" id="builtwith">
-                    <div class="p-2">
+                <img src={yelpcampimg} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Yelp Camp</h5>
+                  <div className="d-flex flex-row mb-3" id="builtwith">
+                    <div className="p-2">
                       <img src={nodejsSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={expressSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={mongodbSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={ejsSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={bootstrapSvg} alt="" />
                     </div>
                   </div>
-                  <p class="card-text">
+                  <div className="card-text">
                     <ul>
                       <li>
                         Yelp Camp allows hassle-free user registration, camp
@@ -267,12 +267,12 @@ class Home extends Component {
                         experience in exploring and evaluating camping options.
                       </li>
                     </ul>
-                  </p>
+                  </div>
                   <a
                     href="https://pink-sparkling-salamander.cyclic.app/"
                     rel="noreferrer"
                     target="_blank"
-                    class="btn btn-dark mb-2"
+                    className="btn btn-dark mb-2"
                   >
                     Click to preview
                   </a>
@@ -281,7 +281,7 @@ class Home extends Component {
                     href="https://github.com/saran-mani/YelpCamp"
                     rel="noreferrer"
                     target="_blank"
-                    class="btn btn-dark"
+                    className="btn btn-dark"
                   >
                     <img src={githubIcon} alt="" />
                     source code
@@ -291,25 +291,25 @@ class Home extends Component {
             </div>
             <div className="col-sm-4">
               <div
-                class="card mb-3"
+                className="card mb-3"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                <img src={countryinfoimg} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Countries Info</h5>
-                  <div class="d-flex flex-row mb-3" id="builtwith">
-                    <div class="p-2">
+                <img src={countryinfoimg} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Countries Info</h5>
+                  <div className="d-flex flex-row mb-3" id="builtwith">
+                    <div className="p-2">
                       <img src={nodejsSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={angularSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={bootstrapSvg} alt="" />
                     </div>
                   </div>
-                  <p class="card-text">
+                  <div className="card-text">
                     <ul>
                       <li>
                         Developed a dynamic web application, "Countries Info,"
@@ -322,12 +322,12 @@ class Home extends Component {
                         engagement with real-time data.
                       </li>
                     </ul>
-                  </p>
+                  </div>
                   <a
                     href="https://country-info-detail.netlify.app/"
                     rel="noreferrer"
                     target="_blank"
-                    class="btn btn-dark mb-2"
+                    className="btn btn-dark mb-2"
                   >
                     Click to preview
                   </a>
@@ -336,7 +336,7 @@ class Home extends Component {
                     href="https://github.com/saran-mani/countries-info.git"
                     rel="noreferrer"
                     target="_blank"
-                    class="btn btn-dark"
+                    className="btn btn-dark"
                   >
                     <img src={githubIcon} alt="" />
                     source code
@@ -346,28 +346,28 @@ class Home extends Component {
             </div>
             <div className="col-sm-4">
               <div
-                class="card mb-3"
+                className="card mb-3"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                <img src={bloodharmonyimg} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Blood Harmony</h5>
-                  <div class="d-flex flex-row mb-3" id="builtwith">
-                    <div class="p-2">
+                <img src={bloodharmonyimg} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Blood Harmony</h5>
+                  <div className="d-flex flex-row mb-3" id="builtwith">
+                    <div className="p-2">
                       <img src={nodejsSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={angularSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={angularmatSvg} alt="" />
                     </div>
-                    <div class="p-2">
+                    <div className="p-2">
                       <img src={tailwindcssSvg} alt="" />
                     </div>
                   </div>
-                  <p class="card-text">
+                  <div className="card-text">
                     <ul>
                       <li>
                         Developed a web application focused on blood donation
@@ -380,12 +380,12 @@ class Home extends Component {
                         suitability for donation.
                       </li>
                     </ul>
-                  </p>
+                  </div>
                   <a
                     href="https://bloodharmony.netlify.app/"
                     rel="noreferrer"
                     target="_blank"
-                    class="btn btn-dark mb-2"
+                    className="btn btn-dark mb-2"
                   >
                     Click to preview
                   </a>
@@ -394,7 +394,7 @@ class Home extends Component {
                     href="https://github.com/saran-mani/blood-group-compatibility"
                     rel="noreferrer"
                     target="_blank"
-                    class="btn btn-dark"
+                    className="btn btn-dark"
                   >
                     <img src={githubIcon} alt="" />
                     source code
