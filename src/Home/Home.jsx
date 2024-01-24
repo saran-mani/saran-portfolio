@@ -20,11 +20,15 @@ import expressSvg from "../assets/icons/express-js.svg";
 import mongodbSvg from "../assets/icons/mongodb.svg";
 import ejsSvg from "../assets/icons/ejs.svg";
 import angularSvg from "../assets/icons/angular.svg";
+import bootstrapSvg from "../assets/icons/bootstrap.svg";
+import tailwindcssSvg from "../assets/icons/tailwindcss.svg";
+import angularmatSvg from "../assets/icons/angularmat.svg";
 import emailSvg from "../assets/icons/email.svg";
 import myImage from "../assets/image.png";
 import yelpcampimg from "../assets/projectImages/yelpcamp.png";
 import countryinfoimg from "../assets/projectImages/countryinfo.png";
-import logo from '../assets/logo.png'
+import bloodharmonyimg from "../assets/projectImages/bloodharmony.png";
+import logo from "../assets/logo.png";
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
@@ -38,7 +42,12 @@ class Home extends Component {
         {/* NAVBAR SECTION */}
         <nav className="navbar navbar-dark  nav-bg-color navbar-expand-md px-3">
           <a href="#home" className="navbar-brand fs-3 fw-bold">
-            <img src={logo} alt="" style={{width:'25px',paddingBottom:'5px'}}/> Saran
+            <img
+              src={logo}
+              alt=""
+              style={{ width: "25px", paddingBottom: "5px" }}
+            />{" "}
+            Saran
           </a>
           <button
             className="navbar-toggler"
@@ -219,7 +228,7 @@ class Home extends Component {
             Projects
           </h1>
           <div className="row ">
-            <div className="col-sm-6">
+            <div className="col-sm-4">
               <div
                 class="card mb-3 text-bg-light"
                 data-aos="fade-up"
@@ -241,14 +250,26 @@ class Home extends Component {
                     <div class="p-2">
                       <img src={ejsSvg} alt="" />
                     </div>
+                    <div class="p-2">
+                      <img src={bootstrapSvg} alt="" />
+                    </div>
                   </div>
                   <p class="card-text">
-                    Welcome to YelpCamp! Jump right in and explore our many
-                    campgrounds. Feel free to share some of your own and comment
-                    on others!
+                    <ul>
+                      <li>
+                        Yelp Camp allows hassle-free user registration, camp
+                        creation with images, and provides a simple review
+                        system for sharing experiences.
+                      </li>
+                      <li>
+                        Each camp gets its dedicated page for straightforward
+                        information and reviews, streamlining the user
+                        experience in exploring and evaluating camping options.
+                      </li>
+                    </ul>
                   </p>
                   <a
-                    href="https://yelpcamp-l3ji.onrender.com/"
+                    href="https://pink-sparkling-salamander.cyclic.app/"
                     rel="noreferrer"
                     target="_blank"
                     class="btn btn-dark mb-2"
@@ -268,7 +289,7 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-4">
               <div
                 class="card mb-3"
                 data-aos="fade-up"
@@ -284,11 +305,23 @@ class Home extends Component {
                     <div class="p-2">
                       <img src={angularSvg} alt="" />
                     </div>
+                    <div class="p-2">
+                      <img src={bootstrapSvg} alt="" />
+                    </div>
                   </div>
                   <p class="card-text">
-                    Welcome to YelpCamp! Jump right in and explore our many
-                    campgrounds. Feel free to share some of your own and comment
-                    on others!
+                    <ul>
+                      <li>
+                        Developed a dynamic web application, "Countries Info,"
+                        leveraging the Restcountries API to provide
+                        comprehensive data on global countries.
+                      </li>
+                      <li>
+                        Implemented a dynamic search bar using Angular and the
+                        Restcountries API, enhancing user navigation and
+                        engagement with real-time data.
+                      </li>
+                    </ul>
                   </p>
                   <a
                     href="https://country-info-detail.netlify.app/"
@@ -301,6 +334,64 @@ class Home extends Component {
                   <br />
                   <a
                     href="https://github.com/saran-mani/countries-info.git"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="btn btn-dark"
+                  >
+                    <img src={githubIcon} alt="" />
+                    source code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-4">
+              <div
+                class="card mb-3"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <img src={bloodharmonyimg} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Blood Harmony</h5>
+                  <div class="d-flex flex-row mb-3" id="builtwith">
+                    <div class="p-2">
+                      <img src={nodejsSvg} alt="" />
+                    </div>
+                    <div class="p-2">
+                      <img src={angularSvg} alt="" />
+                    </div>
+                    <div class="p-2">
+                      <img src={angularmatSvg} alt="" />
+                    </div>
+                    <div class="p-2">
+                      <img src={tailwindcssSvg} alt="" />
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    <ul>
+                      <li>
+                        Developed a web application focused on blood donation
+                        compatibility to encourage life-saving contributions.
+                      </li>
+                      <li>
+                        Designed a user-friendly interface for patients and
+                        donors to input blood groups, dynamically checking
+                        compatibility and delivering clear messages on the
+                        suitability for donation.
+                      </li>
+                    </ul>
+                  </p>
+                  <a
+                    href="https://bloodharmony.netlify.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="btn btn-dark mb-2"
+                  >
+                    Click to preview
+                  </a>
+                  <br />
+                  <a
+                    href="https://github.com/saran-mani/blood-group-compatibility"
                     rel="noreferrer"
                     target="_blank"
                     class="btn btn-dark"
